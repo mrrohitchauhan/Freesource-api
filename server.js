@@ -13,7 +13,7 @@ app.use(express.json());
 
 
 
-const uri = process.env.ATLAS_URI || 'mongodb+srv://tara:tara2784@cluster0-ujmhn.mongodb.net/freesource?retryWrites=true&w=majority';
+const uri = process.env.ATLAS_URI ;
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true ,useUnifiedTopology: true}
 );
 const connection = mongoose.connection;
