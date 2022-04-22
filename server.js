@@ -9,6 +9,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 //check
 app.use(express.json());
+//changes
 app.use(cors());
 
 
